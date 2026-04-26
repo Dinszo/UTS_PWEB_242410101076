@@ -20,5 +20,12 @@ Username : Admin
 Password : Admin123
 
 SS WEBSITE : 
-
+1. Login page
+   ![Login](images/Login.png)
+3. Dashboard
+   ![Dashboard](images/dashboard.png)
+5. Kelola Produk
+   ![Kelola Produk](images/KelolaProduk.png)
+7. Profile
+   ![Profile](images/Profile.png)
 
