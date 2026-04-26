@@ -9,10 +9,19 @@ html, body {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f3f0ea;
-    color: #3d2b22;
-    line-height: 1.5;
+    background-image: url('/images/bgbody.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
 }
 
 img {
@@ -222,8 +231,8 @@ a {
     gap: 20px;
     flex-wrap: wrap;
     padding: 12px 30px;
-    background: #ffffff;
-    border-bottom: 1px solid #e5ddd5;
+    background: #d8723f;
+    border-bottom: 1px solid #2b1d16
 }
 
 .nav-left {
@@ -298,7 +307,7 @@ a {
 
 .dashboard-header h1 {
     font-size: clamp(2rem, 5vw, 3rem);
-    color: #2b1d16;
+    color: #726464;
     margin-bottom: 8px;
 }
 
@@ -319,24 +328,39 @@ a {
     border-radius: 20px;
     padding: 28px;
     box-shadow: 0 10px 25px rgba(43, 29, 22, 0.08);
+    background-image: url('/images/bgh3.jpg');
 }
 
 .stat-card h3 {
     font-size: 28px;
-    color: #2b1d16;
+    color: #ffffff;
     margin-bottom: 8px;
+    
 }
-
+    
 .stat-card p {
     color: #7a685f;
 }
 
 .dashboard-section {
-    background: #fffaf5;
+
     border-radius: 22px;
     padding: 24px;
     box-shadow: 0 10px 25px rgba(43, 29, 22, 0.08);
     margin-bottom: 28px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: url('/images/bgsection.png');
+}
+
+.dashboard-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    border-radius: 20px;
 }
 
 .section-title-row {
@@ -349,7 +373,7 @@ a {
 }
 
 .section-title-row h2 {
-    color: #2b1d16;
+    color: #ffffff;
     font-size: 24px;
 }
 
@@ -376,11 +400,17 @@ a {
 }
 
 .simple-list-item {
-    background: #ffffff;
-    border: 1px solid #eee2d7;
+    background: rgba(255, 255, 255, 0.65) !important;
+    border: 1px solid rgba(255,255,255,0.3);
     border-radius: 14px;
     padding: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
+
+.simple-list-item:hover {
+    background: rgba(255, 255, 255, 0.75) !important;
+}   
 
 .simple-list-item span {
     display: block;
@@ -404,7 +434,7 @@ a {
 
 .section-header h1 {
     margin-bottom: 12px;
-    color: #2b1d16;
+    color: #a1928b;
     font-size: clamp(2rem, 5vw, 3rem);
 }
 
@@ -419,6 +449,7 @@ a {
     padding: 24px;
     box-shadow: 0 10px 25px rgba(43, 29, 22, 0.08);
     margin-bottom: 24px;
+    
 }
 
 .form-card h2 {
@@ -536,8 +567,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f3f0ea;
+    
     padding: 30px 20px;
+    
 }
 
 .profile-card {
@@ -605,8 +637,8 @@ a {
 
 /* FOOTER */
 .footer {
-    background: #2b1d16;
-    color: white;
+    background: #d8723f;
+    color: #2b1d16;
     text-align: center;
     padding: 22px 0;
     margin-top: 40px;
