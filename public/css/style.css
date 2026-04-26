@@ -443,32 +443,14 @@ a {
     margin-bottom: 20px;
 }
 
-.form-card {
-    background: #fffaf5;
-    border-radius: 22px;
-    padding: 24px;
-    box-shadow: 0 10px 25px rgba(43, 29, 22, 0.08);
-    margin-bottom: 24px;
-    
-}
 
 .form-card h2 {
     margin-bottom: 16px;
     color: #2b1d16;
 }
 
-.product-form {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr) auto;
-    gap: 12px;
-}
 
-.product-form input {
-    padding: 12px 14px;
-    border: 1px solid #d9cec3;
-    border-radius: 10px;
-    outline: none;
-}
+
 
 .btn {
     background: #2b1d16;
@@ -511,54 +493,6 @@ a {
 .menu-table th {
     background: #f2e6dc;
     color: #2b1d16;
-}
-
-.action-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.btn-small {
-    background: #2b1d16;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 13px;
-}
-
-.btn-danger {
-    background: #9b2c2c;
-}
-
-.edit-dropdown summary {
-    list-style: none;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.edit-dropdown summary::-webkit-details-marker {
-    display: none;
-}
-
-.edit-form {
-    margin-top: 10px;
-    display: grid;
-    gap: 8px;
-    min-width: 220px;
-    background: #fff;
-    border: 1px solid #eaded4;
-    padding: 12px;
-    border-radius: 12px;
-}
-
-.edit-form input {
-    padding: 10px 12px;
-    border: 1px solid #d9cec3;
-    border-radius: 8px;
-    outline: none;
 }
 
 /* PROFILE */
@@ -645,21 +579,7 @@ a {
 }
 
 /* RESPONSIVE */
-@media (max-width: 992px) {
-    .stats-grid,
-    .dashboard-bottom-grid {
-        grid-template-columns: 1fr;
-    }
 
-    .product-form {
-        grid-template-columns: 1fr;
-    }
-
-    .action-group {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
 
 @media (max-width: 900px) {
     .login-box {
@@ -767,27 +687,13 @@ body {
     backdrop-filter: blur(3px);
 }
 
-.form-group input,
-.product-form input,
-.edit-form input {
-    transition: 0.25s ease;
-}
-
-.form-group input:hover,
-.product-form input:hover,
-.edit-form input:hover {
-    border-color: #b58a69;
-}
-
 .btn,
-.btn-small,
 .login-btn,
 .logout-btn {
     transition: 0.25s ease;
 }
 
 .btn:hover,
-.btn-small:hover,
 .login-btn:hover,
 .logout-btn:hover {
     transform: translateY(-1px);
@@ -844,9 +750,7 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .product-form {
-        grid-template-columns: 1fr 1fr;
-    }
+
 
     .menu-table {
         min-width: 700px;
@@ -944,9 +848,7 @@ body {
         font-size: 20px;
     }
 
-    .product-form {
-        grid-template-columns: 1fr;
-    }
+
 
     .btn,
     .login-btn {
@@ -1020,12 +922,7 @@ body {
         font-size: 13px;
     }
 
-    .form-group input,
-    .product-form input,
-    .edit-form input {
-        font-size: 13px;
-        padding: 12px 13px;
-    }
+}   
 
     .simple-list-item,
     .info-item {
@@ -1038,19 +935,6 @@ body {
         font-size: 13px;
     }
 
-    .btn-small {
-        width: 100%;
-        text-align: center;
-    }
-
-    .action-group {
-        width: 100%;
-    }
-
-    .edit-form {
-        min-width: 100%;
-    }
-}
 
 .nav-center a.active {
     color: #2b1d16;
